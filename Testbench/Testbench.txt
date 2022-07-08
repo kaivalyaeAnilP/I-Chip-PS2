@@ -108,7 +108,7 @@ module Testbench;
 	
 	initial
 	#5257760 begin
-	$writememh("encrypted2.hex",img_encrypted); 
+	$writememh("Encrypted_image.hex",img_encrypted); 
 	$finish;
 	end
 	
