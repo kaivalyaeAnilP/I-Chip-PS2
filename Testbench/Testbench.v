@@ -22,7 +22,7 @@ module Testbench;
 	
 	initial 
 	begin
-	$readmemh("encrypted2.hex", img);
+		$readmemh("ps2_pic.txt", img);
 	#1 rst = 3'b000;
 	#2 rst = 3'b111;
 	end
@@ -108,7 +108,7 @@ module Testbench;
 	
 	initial
 	#5257760 begin
-	$writememh("decrypted2.hex",img_encrypted); 
+		$writememh("Encrypted_image.hex",img_encrypted); 
 	$finish;
 	end
 	
